@@ -1,0 +1,14 @@
+import {playAgain} from "../../data.js";
+
+export function Lose() {
+    const element = document.createElement("div")
+    element.append("You lose")
+
+    const playAgainButton = document.createElement("button")
+    playAgainButton.append("Play again")
+
+    playAgainButton.addEventListener("click", ()=> {playAgain()})
+
+    element.append(playAgainButton)
+    return element
+}
