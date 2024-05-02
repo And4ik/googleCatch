@@ -1,4 +1,4 @@
-import {catchGoogle} from "../../../data.js";
+
 
 export function Google() {
     const element = document.createElement("img")
@@ -6,6 +6,5 @@ export function Google() {
     element.width = 40
     element.height = 40
     element.alt = "Google Logo";
-    element.addEventListener("click", catchGoogle)
     return element
 }
